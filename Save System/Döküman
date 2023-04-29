@@ -1,0 +1,37 @@
+﻿					Save Fonksiyonu
+
+-> Öncelikle os.mkdir ile saves klasörü oluşturuluyor ve bu sayede verileri kayıt edebileceğimiz bir ortam sağlanıyor.
+
+-> Daha sonra ise veri üretmek icin tanx, cotx ve secx, veri okutmak icin sinx ve cosx fonksiyonlarını oluşturuyoruz.
+
+-> Tanx fonksiyonu iki değişkenli verileri kayıt etmek için kullanılır:
+  tanx(kategori,isim) 
+   *kategori ile özel isim mi yoksa tek kullanımlık isim mi olacağını belirtiyoruz,
+   *eğer isim oluşturmaya devam edecek iseniz özel isim oluşturma seçeneğini girin ilk parametreye [isim] yazın.
+   [!] Eğer tek kullanımlık isim kategorisini seçerseniz bir daha o isimi değiştiremez ve main olarak o isimi kayıt edersiniz. Bu kategoriyi kullanmak için ilk parametreye [tekisim] yazın.
+   *ikinci parametreye vermek istediğiniz ismi girin [burak,hakan,melik vb...] 
+
+-> Cotx fonksiyonu üç değişkenli verileri kayıt etmek için kullanılır:
+  cotx(kategori,isim,veri)
+   *kategori ile durum mu yoksa yaş bilgisi mi gireceğimizi seçiyoruz ilk parametreye [isimBilgi_durum] yazın.
+   *isim ile hangi özel isime durum bilgisi gireceğinizi seçin, daha önceden tanx fonksiyonu ile oluşturduğunuz isime durum bilgisi girebilirsiniz [burak,hakan,melik vb...]
+   *veri ile girmek istediğiniz durum bilgisini girin [iyi,kötü vb...].
+
+-> secx fonksiyonu iki değişkenli durum veya yaş bilgisini kayıt etmek için kullanılır:
+  secx(kategori,veri)
+  *kategori ile durum mu yoksa yaş bilgisi mi gireceğimizi seçiyoruz ilk parametreye [isimBilgi_durum] yazın
+  *veri ile girmek istediğiniz durum bilgisini girin [iyi,kötü vb...]
+
+-> Sinx fonksiyonu tek değişkenli veriyi okumak için kullanılır:
+  sinx(kategori)
+   *bu fonksiyonda sadece tekisim ile alakalı olan kategorileri çekebiliriz [tekisim], [tekisimBilgi_durum].
+
+
+-> Cosx fonksiyonu iki değişkenli veriyi okumak için kullanılır:
+  cosx(kategori,isim)
+   *kategori ile çekmek istediğimiz özel isimin ya isim bilgisini ya da durumunu çekeriz [isim], [isimBilgi_durum]
+   *isim ile bilgisini çekmek istediğimiz özel isimi seçeriz [burak,hakan,melik vb...]
+
+-> 'tekisim' Kategorisi için ayrı bir parantez açayım:
+  *tekisim özelliğini yapay zekanıza verebileceğiniz bir kalıcı isim gibi düşündüm o yönde fonksiyonlar oluşturdum.
+    
