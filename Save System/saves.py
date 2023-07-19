@@ -6,7 +6,7 @@ if (kayit_Sorgu != True):
 
 
 # İki değişken kayıt etme fonksiyonu
-    def tanx(kategori, isim):
+def tanx(kategori, isim):
             
             ### Bu kategori, sayısız ismi kayıt yapma imkanı sunar!
             if (kategori == "isim"):
@@ -36,8 +36,8 @@ if (kayit_Sorgu != True):
                 print(" > Anlayamadım...")
 
 
-    # üç değişkenli veri kayıt etme # özel isimlerin verilerini kayıt ediyoruz durum,yas gibi
-    def cotx(kategori,isim,veri):
+# üç değişkenli veri kayıt etme # özel isimlerin verilerini kayıt ediyoruz durum,yas gibi
+def cotx(kategori,isim,veri):
             # Belirteceğimiz özel isim hakkında durum bilgisi girilebilir
             if (kategori == "isimBilgi_durum"):
                 bosisim = isim.strip()
@@ -56,8 +56,8 @@ if (kayit_Sorgu != True):
     
 
 
-    ### iki değişkenli veri kayıt etme # tekisimin verisini kayıt ediyoruz durum,yas gibi
-    def secx(kategori,veri):
+### iki değişkenli veri kayıt etme # tekisimin verisini kayıt ediyoruz durum,yas gibi
+def secx(kategori,veri):
         # tekisim kategorisi için durum kayıt etme
         if (kategori == "tekisimBilgi_durum"):
             newdosya = open(f"saves/tekisimdurum.txt","w", encoding="utf-8")
@@ -71,8 +71,8 @@ if (kayit_Sorgu != True):
 
 
 
-    # tek değişken çağırmalı # tekisimin verilerini okuma isim,durum,yas gibi
-    def sinx(kategori):
+# tek değişken çağırmalı # tekisimin verilerini okuma isim,durum,yas gibi
+def sinx(kategori):
 
         if (kategori == "tekisim"):
             dosya = open("saves/tekisim.txt", "r", encoding="utf-8")
@@ -94,8 +94,8 @@ if (kayit_Sorgu != True):
 
 
 
-    # iki değişken çağırmalı # özel isimleri verilerini okuyoruz isim,durum,yas gibi
-    def cosx(kategori,isim):
+# iki değişken çağırmalı # özel isimleri verilerini okuyoruz isim,durum,yas gibi
+def cosx(kategori,isim):
         bosisim = isim.strip()
 
         if (kategori == "isim"):
